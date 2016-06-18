@@ -2,9 +2,9 @@ package televisor;
 
 /**
  *
- * @author Sena
+ * @author GAES2
  */
-public class Televisor{
+public class Televisor extends Configuracion{
 	Canal canal;
 	public String marca;
 	public double largo;
@@ -62,8 +62,8 @@ public class Televisor{
 	 */
 	public static void main(String[] args) {
 		// TODO code application logic here
-		Canal canal = new Canal();
-		Televisor TV = new Televisor( canal, "LG", 40, 100, 5, 125, 100);
+		Canal canal = new Canal(5, "Caracol televisión", true);
+		Televisor TV = new Televisor(canal, "LG", 40, 100, 5, 125, 100);
 		System.out.println(TV.marca);
 		System.out.println(TV.cantidadCanales);
 	}
