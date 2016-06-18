@@ -51,22 +51,23 @@ public class Televisor{
 	}
 
 	public void cambiarConfiguración() {
+            int brillo=100;
+            brillo = (brillo==0) ? brillo : brillo--;
+            
 	}
 
 	public void cambiarMute() {
 		mute = !mute;
 	}
 
-	/**
-	 * @param args the command line arguments
-	 */
+	
 	public static void main(String[] args) {
 		// TODO code application logic here
 		Canal canal = new Canal();
 		Televisor TV = new Televisor( canal, "LG", 40, 100, 5, 125, 100);
-		System.out.println(TV.marca);
-		System.out.println(TV.cantidadCanales);
-                System.out.println("");
+		System.out.println("Marca: "+TV.marca);
+		System.out.println("Cantidad canales: "+TV.cantidadCanales);
+                System.out.println(canal.nombre);
 	}
 
 }
