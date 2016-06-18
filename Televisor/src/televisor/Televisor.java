@@ -4,29 +4,30 @@ package televisor;
  *
  * @author Sena
  */
-public class Televisor {
-
+public class Televisor{
+	Canal canal;
 	public String marca;
 	public double largo;
 	public double ancho;
 	public double profundidad;
-	public boolean encendido=false;
-	public boolean mute=false;
-	public int volumen=0;
+	public boolean encendido = false;
+	public boolean mute = false;
+	public int volumen = 0;
 	public int canalActual;
-	private int cantidadCanales=125;
-	private int volumenMaximo=100;
+	private int cantidadCanales = 125;
+	private int volumenMaximo = 100;
 
-	public Televisor(String marca, double largo, double ancho, double profundidad, int cantidadCanales, int volumenMaximo){
-		this.marca=marca;
-		this.largo=largo;
-		this.ancho=ancho;
-		this.ancho=profundidad;
-		this.cantidadCanales=cantidadCanales;
-		this.volumenMaximo=volumenMaximo;
+	public Televisor(Canal canal, String marca, double largo, double ancho, double profundidad, int cantidadCanales, int volumenMaximo) {
+		this.marca = marca;
+		this.largo = largo;
+		this.ancho = ancho;
+		this.ancho = profundidad;
+		this.cantidadCanales = cantidadCanales;
+		this.volumenMaximo = volumenMaximo;
 	}
+
 	public void encender() {
-		encendido=(encendido)?false:true;
+		encendido = !encendido;
 	}
 
 	public void cambiarCanal(int canal) {
@@ -34,26 +35,26 @@ public class Televisor {
 	}
 
 	public void subirCanal() {
-		canalActual=(canalActual==cantidadCanales)?1:canalActual++;
+		canalActual = (canalActual == cantidadCanales) ? 1 : canalActual++;
 	}
 
 	public void bajarCanal() {
-		canalActual=(canalActual==1)?cantidadCanales:canalActual--;
+		canalActual = (canalActual == 1) ? cantidadCanales : canalActual--;
 	}
 
 	public void subirVolumen() {
-		volumen=(volumen==volumenMaximo)?volumen:volumen++;
+		volumen = (volumen == volumenMaximo) ? volumen : volumen++;
 	}
 
 	public void bajarVolumen() {
-		volumen=(volumen==0)?volumen:volumen--;
+		volumen = (volumen == 0) ? volumen : volumen--;
 	}
 
 	public void cambiarConfiguración() {
 	}
 
 	public void cambiarMute() {
-		mute=(mute)?false:true;
+		mute = !mute;
 	}
 
 	/**
