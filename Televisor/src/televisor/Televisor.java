@@ -1,6 +1,6 @@
 package televisor;
 
-/**
+/** //Juan es una loca
  *
  * @author Sena
  */
