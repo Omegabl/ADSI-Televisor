@@ -62,7 +62,8 @@ public class Televisor{
 	 */
 	public static void main(String[] args) {
 		// TODO code application logic here
-		Televisor TV = new Televisor("LG", 40, 100, 5, 125, 100);
+		Canal canal = new Canal();
+		Televisor TV = new Televisor( canal, "LG", 40, 100, 5, 125, 100);
 		System.out.println(TV.marca);
 		System.out.println(TV.cantidadCanales);
 	}

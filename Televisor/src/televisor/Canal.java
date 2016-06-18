@@ -14,4 +14,7 @@ public class Canal {
 	public int numero;
 	public String nombre;
 	public boolean closedCaption;
+	public Canal(){
+		
+	}
 }
