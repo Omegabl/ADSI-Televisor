@@ -4,7 +4,7 @@ package televisor;
  *
  * @author GAES2
  */
-public class Televisor{
+public class Televisor extends Configuracion{
 	Canal canal;
 	public String marca;
 	public double largo;
