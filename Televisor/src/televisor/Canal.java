@@ -14,9 +14,10 @@ public class Canal {
 	public int numero;
 	public String nombre;
 	public boolean closedCaption;
-	public Canal(){
-		
+
+	public Canal(int numero, String nombre, boolean closedCaption) {
+		this.numero = numero;
+		this.nombre = nombre;
+		this.closedCaption = closedCaption;
 	}
-        
-        
 }
