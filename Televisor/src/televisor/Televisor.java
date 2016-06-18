@@ -1,6 +1,6 @@
 package televisor;
 
-/** 
+/**
  *
  * @author Sena
  */
