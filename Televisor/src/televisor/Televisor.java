@@ -50,11 +50,6 @@ public class Televisor extends Configuracion{
 		volumen = (volumen == 0) ? volumen : volumen--;
 	}
 
-	public void cambiarConfiguración() {
-            int brillo=100;
-            brillo = (brillo==0) ? brillo : brillo--;
-            
-	}
 
 	public void cambiarMute() {
 		mute = !mute;
