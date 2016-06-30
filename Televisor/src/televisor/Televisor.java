@@ -50,16 +50,12 @@ public class Televisor extends Configuracion{
 		volumen = (volumen == 0) ? volumen : volumen--;
 	}
 
-	public void cambiarConfiguración() {
-	}
 
 	public void cambiarMute() {
 		mute = !mute;
 	}
 
-	/**
-	 * @param args the command line arguments
-	 */
+	
 	public static void main(String[] args) {
 		// TODO code application logic here
 		Canal canal = new Canal(5, "Caracol televisión", true);

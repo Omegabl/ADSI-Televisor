@@ -10,5 +10,41 @@ package televisor;
  * @author GAES2
  */
 public class Configuracion {
-	
+
+    private int brilloMax = 100;
+    private int contrasteMax = 100;
+    private int colorMax = 100;
+    public int brilloActual;
+    public int contrasteActual;
+    public int colorActual;
+
+    public void aumentarBrillo() {
+        brilloActual = (brilloActual == brilloMax) ? 1 : brilloActual++;
+
+    }
+
+    public void disminuirBrillo() {
+        brilloActual = (brilloActual == 1) ? brilloMax : brilloActual--;
+    }
+    public void aumentarContraste() {
+        contrasteActual = (contrasteActual == contrasteMax) ? 1 : contrasteActual++;
+    
+    }
+    public void disminuirContraste() {
+        contrasteActual = (contrasteActual == 1) ? contrasteMax : contrasteActual--;
+    }
+    
+    public void aumentarColor() {
+        colorActual = (colorActual == colorMax) ? 1 : colorActual++;
+
+    }
+    public void disminuirColor() {
+        colorActual = (colorActual == 1) ? colorMax : colorActual--;
+    }
+    
+    public void idiomas(){
+        
+     String[]idiomas={"Ingles","Español","Portugues","Frances"};
+    }
+
 }

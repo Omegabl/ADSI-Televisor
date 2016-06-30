@@ -20,5 +20,4 @@ public class Canal {
 		this.nombre = nombre;
 		this.closedCaption = closedCaption;
 	}
-	
 }
