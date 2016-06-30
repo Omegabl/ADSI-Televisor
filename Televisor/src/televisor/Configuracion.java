@@ -23,7 +23,7 @@ public class Configuracion {
 
     }
 
-    public void bajarbrillo() {
+    public void disminuirBrillo() {
         brilloActual = (brilloActual == 1) ? brilloMax : brilloActual--;
     }
     public void aumentarContraste() {
@@ -38,9 +38,13 @@ public class Configuracion {
         colorActual = (colorActual == colorMax) ? 1 : colorActual++;
 
     }
-    public void bajarColor() {
+    public void disminuirColor() {
         colorActual = (colorActual == 1) ? colorMax : colorActual--;
     }
     
+    public void idiomas(){
+        
+     String[]idiomas={"Ingles","Español","Portugues","Frances"};
+    }
 
 }
