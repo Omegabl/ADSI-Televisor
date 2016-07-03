@@ -11,40 +11,45 @@ package televisor;
  */
 public class Configuracion {
 
-    private int brilloMax = 100;
-    private int contrasteMax = 100;
-    private int colorMax = 100;
-    public int brilloActual;
-    public int contrasteActual;
-    public int colorActual;
+	private final int brilloMax;
+	private final int contrasteMax;
+	private final int colorMax;
+	public int brilloActual;
+	public int contrasteActual;
+	public int colorActual;
+	public String[] idiomas;
 
-    public void aumentarBrillo() {
-        brilloActual = (brilloActual == brilloMax) ? 1 : brilloActual++;
+	public Configuracion(int brilloMax, int contrasteMax, int colorMax, String[] idiomas) {
+		this.brilloMax = brilloMax;
+		this.contrasteMax = contrasteMax;
+		this.colorMax = colorMax;
+		this.idiomas = idiomas;
+	}
 
-    }
+	public void aumentarBrillo() {
+		brilloActual = (brilloActual == brilloMax) ? brilloMax : brilloActual++;
+	}
 
-    public void disminuirBrillo() {
-        brilloActual = (brilloActual == 1) ? brilloMax : brilloActual--;
-    }
-    public void aumentarContraste() {
-        contrasteActual = (contrasteActual == contrasteMax) ? 1 : contrasteActual++;
-    
-    }
-    public void disminuirContraste() {
-        contrasteActual = (contrasteActual == 1) ? contrasteMax : contrasteActual--;
-    }
-    
-    public void aumentarColor() {
-        colorActual = (colorActual == colorMax) ? 1 : colorActual++;
+	public void disminuirBrillo() {
+		brilloActual = (brilloActual == 0) ? brilloActual : brilloActual--;
+	}
 
-    }
-    public void disminuirColor() {
-        colorActual = (colorActual == 1) ? colorMax : colorActual--;
-    }
-    
-    public void idiomas(){
-        
-     String[]idiomas={"Ingles","Español","Portugues","Frances"};
-    }
+	public void aumentarContraste() {
+		contrasteActual = (contrasteActual == contrasteMax) ? contrasteMax : contrasteActual++;
+
+	}
+
+	public void disminuirContraste() {
+		contrasteActual = (contrasteActual == 0) ? contrasteActual : contrasteActual--;
+	}
+
+	public void aumentarColor() {
+		colorActual = (colorActual == colorMax) ? colorMax : colorActual++;
+
+	}
+
+	public void disminuirColor() {
+		colorActual = (colorActual == 0) ? colorActual : colorActual--;
+	}
 
 }

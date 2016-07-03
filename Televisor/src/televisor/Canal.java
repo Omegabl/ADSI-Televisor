@@ -11,13 +11,27 @@ package televisor;
  */
 public class Canal {
 
-	public int numero;
-	public String nombre;
-	public boolean closedCaption;
+	private int numero;
+	private String nombre;
+	private boolean closedCaption;
 
 	public Canal(int numero, String nombre, boolean closedCaption) {
 		this.numero = numero;
 		this.nombre = nombre;
 		this.closedCaption = closedCaption;
 	}
+	//Getters
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public boolean isClosedCaption() {
+		return closedCaption;
+	}
+	
 }
