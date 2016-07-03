@@ -1,5 +1,7 @@
 package televisor;
 
+import java.util.Scanner;
+
 /**
  *
  * @author GAES2
@@ -67,6 +69,14 @@ public class Televisor{
 		TV.cambiarCanal(5);
 		System.out.println(TV.canalActual);
 		System.out.println(TV.canal.getNombre());
+                Scanner opcion=new Scanner(System.in);
+                System.out.print("Ingrese 1 para cambiar el tinte o 2 para cambiar la nitidez: ");
+                int op_menu=opcion.nextInt();
+                if (op_menu==1){
+                configuracion.Aumentartinte();
+                }else{
+                configuracion.Cambiarnitidez();
+            }
 	}
 
 }
